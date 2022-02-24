@@ -27,7 +27,7 @@
 
 # This will be the folder name under /magisk
 # This should also be the same as the id in your module.prop to prevent confusion
-MODID=template
+MODID=MiuiCoreFix
 
 # Set to true if you need to enable Magic Mount
 # Most mods would like it to be enabled
@@ -52,6 +52,7 @@ print_modname() {
   ui_print "*******************************"
   ui_print "     Magisk Module Template    "
   ui_print "*******************************"
+  ui_print "a thingy that should fix the problem i have i hope"
 }
 
 ##########################################################################################
@@ -65,10 +66,8 @@ print_modname() {
 # You don't need to remove the example below, these values will be overwritten by your own list
 # This is an example
 REPLACE="
-/system/app/Youtube
-/system/priv-app/SystemUI
-/system/priv-app/Settings
-/system/framework
+/data/adb/modules/MiuiCore/system
+/system
 "
 
 # Construct your own list here, it will overwrite the example
